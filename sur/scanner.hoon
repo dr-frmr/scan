@@ -6,7 +6,7 @@
 +$  action
   $%  [%create ~]
       [%verify code=@]
-      [%set-guests ships=(list ship)]
+      [%set-guests guests=(list ship)]
       [%clear-guests ~]
   ==
 ::
@@ -14,7 +14,7 @@
   $%  [%new-sig code=@ expires-at=time]
   ==
 +$  reader-update
-  $%  [%guest-list ships=(list ship)]
+  $%  [%guest-list guests=(list [@p ?])]
       [%bad-sig ~]
       [%expired-sig who=ship]
       [%not-on-list who=ship]

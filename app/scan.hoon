@@ -46,7 +46,7 @@
       %guest-updates
     ::  provide updates on signatures we verify on this path
     =-  ~[[%give %fact ~[/reader-updates] %reader-update -]]^this
-    !>([%guest-list ~(tap in ~(key by guests.state))])
+    !>([%guest-list ~(tap by guests.state)])
   ==
 ::
 ++  on-poke
@@ -95,15 +95,17 @@
         [(reader-card !>([%not-on-list who])) state]
       ::  give subscriber notice of GOOD signature!
       ~&  >  "%scan: received signature from {<who>}"
-      =/  fresh  (~(put by guests.state) who %.y)
-      :_  state(guests fresh)
+      =+  (~(put by guests.state) who %.y)
+      :_  state(guests -)
       %+  weld  (reader-card !>([%guest-sig who]))
-      (reader-card !>([%guest-list ~(tap in ~(key by fresh))]))
+      (reader-card !>([%guest-list ~(tap by -)]))
     ::
         %set-guests
       ::  define new guest list
       ::  TODO make more customizeable, multi-list, etc
-      `state(guests (malt (turn ships.action |=(=ship [ship %.n]))))
+      =+  (malt (turn guests.action |=(=ship [ship %.n])))
+      :_  state(guests -)
+      (reader-card !>([%guest-list ~(tap by -)]))
     ::
         %clear-guests
       ::  reset state
