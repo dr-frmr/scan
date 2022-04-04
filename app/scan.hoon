@@ -41,11 +41,11 @@
       %signer-updates
     ::  provide our most recent punch card
     ?~  latest.state  `this
-    ~[[%give %fact ~[/signer-updates] %signer-update !>([%new-sig u.latest])]]^this
+    ~[[%give %fact ~ %signer-update !>([%new-sig u.latest])]]^this
   ::
-      %guest-updates
+      %reader-updates
     ::  provide updates on signatures we verify on this path
-    =-  ~[[%give %fact ~[/reader-updates] %reader-update -]]^this
+    =-  ~[[%give %fact ~ %reader-update -]]^this
     !>([%guest-list ~(tap by guests.state)])
   ==
 ::
