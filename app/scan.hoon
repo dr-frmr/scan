@@ -38,7 +38,7 @@
   ^-  (quip card _this)
   ?>  =(src.bowl our.bowl)
   ?+    -.path  !!
-      %our-sig
+      %signer-updates
     ::  provide our most recent punch card
     ?~  latest.state  `this
     ~[[%give %fact ~[/signer-updates] %signer-update !>([%new-sig u.latest])]]^this
