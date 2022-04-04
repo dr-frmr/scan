@@ -86,13 +86,14 @@
         [(reader-card !>([%bad-sig ~])) state]
       =*  who  q.signature.punch
       ?:  (gth now.bowl time.punch)
-        ::  give notice of expired signature
         ~&  >>>  "%scan: received an expired signature!"
         [(reader-card !>([%expired-sig who])) state]
       ?.  (~(has by guests.state) who)
-        ::  give notice of non-guest ship
         ~&  >>>  "%scan: received a non-approved signature!"
         [(reader-card !>([%not-on-list who])) state]
+      ?:  (~(got by guests.state) who)
+        ~&  >>>  "%scan: received same guest's signature twice!"
+        [(reader-card !>([%already-in who])) state]
       ::  give subscriber notice of GOOD signature!
       ~&  >  "%scan: received signature from {<who>}"
       =+  (~(put by guests.state) who %.y)

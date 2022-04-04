@@ -16,6 +16,7 @@
 +$  reader-update
   $%  [%guest-list guests=(list [@p ?])]
       [%bad-sig ~]
+      [%already-in who=ship]
       [%expired-sig who=ship]
       [%not-on-list who=ship]
   ==

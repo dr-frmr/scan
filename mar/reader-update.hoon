@@ -17,9 +17,13 @@
       [(crip (scow %p s)) [%b here]]
     ::
       %bad-sig      ~
-      %expired-sig  (frond ['who' [%s (scot %p who.upd)]])
-      %not-on-list  (frond ['who' [%s (scot %p who.upd)]])
+      %already-in   (who who.upd)
+      %expired-sig  (who who.upd)
+      %not-on-list  (who who.upd)
     ==
+  ++  who
+    |=  s=@p
+    (frond ['who' [%s (scot %p s)]])
   --
 ++  grad  %noun
 --
