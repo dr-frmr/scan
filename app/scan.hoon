@@ -110,7 +110,8 @@
     ::
         %clear-guests
       ::  reset state
-      `state(guests ~)
+      :_  state(guests ~)
+      (reader-card !>([%guest-list ~]))
     ==
   ::
   ++  reader-card
