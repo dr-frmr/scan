@@ -1,1 +1,1 @@
-./garden/app/docket.hoon
+../../garden/app/docket.hoon

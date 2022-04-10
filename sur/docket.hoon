@@ -1,1 +1,1 @@
-./garden/sur/docket.hoon
+../../garden/sur/docket.hoon
