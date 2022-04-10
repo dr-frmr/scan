@@ -1,1 +1,1 @@
-/Users/williamgalebach/work/urbit/urbit-core/pkg/garden/sur/docket.hoon
+./garden/sur/docket.hoon
