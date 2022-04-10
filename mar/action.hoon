@@ -10,7 +10,7 @@
     %.  jon
     %-  of
     :~  [%create bo]
-        [%verify (ot ~[[%code ni]])]
+        [%verify (ot ~[[%code (se %ud)]])]
         [%set-guests (ar (se %p))]
         [%clear-guests bo]
     ==

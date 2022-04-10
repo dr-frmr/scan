@@ -10,7 +10,7 @@
   ++  noun  upd
   ++  json
     %-  pairs
-    :~  ['code' (numb code.upd)]
+    :~  ['code' [%s (scot %ud code.upd)]]
         ['expires_at' [%s (scot %da expires-at.upd)]]
     ==
   --
