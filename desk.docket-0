@@ -1,8 +1,8 @@
-:~  title+'Scan'
+:~  title+'Handshake'
     info+'Confirm Urbit IDs via QR code.'
     color+0xdd.7c8a  :: purple is 0x72.7bf2 pink is 0xdd.7c8a
-    glob-http+['https://aleph-app-distro.s3.us-east-2.amazonaws.com/glob-0v1.go21v.1i99b.v3er6.d0jsh.6bnfj.glob' 0v1.go21v.1i99b.v3er6.d0jsh.6bnfj]
-    base+'scan'
+    glob-http+['https://handshake-app-distro.s3.us-east-2.amazonaws.com/glob-0v5.epjg7.li8q9.9gajn.l4h9h.ii4o9.glob' 0v5.epjg7.li8q9.9gajn.l4h9h.ii4o9]
+    base+'handshake'
     image+'https://static.thenounproject.com/png/2002633-200.png'
     version+[0 0 1]
     website+'https://uqbar.network'
