@@ -1,10 +1,10 @@
 :~  title+'Handshake'
     info+'Confirm Urbit IDs via QR code.'
     color+0xdd.7c8a  :: purple is 0x72.7bf2 pink is 0xdd.7c8a
-    glob-http+['https://handshake-app-distro.s3.us-east-2.amazonaws.com/glob-0vv6vcg.0emk1.gpphp.3ma93.mjfq5.glob' 0vv6vcg.0emk1.gpphp.3ma93.mjfq5]
+    glob-http+['https://handshake-app-distro.s3.us-east-2.amazonaws.com/glob-0v6.9oorv.suqts.4shor.n5roc.0sl2p.glob' 0v6.9oorv.suqts.4shor.n5roc.0sl2p]
     base+'handshake'
     image+'https://static.thenounproject.com/png/2002633-200.png'
-    version+[0 0 1]
+    version+[0 0 2]
     website+'https://uqbar.network'
     license+'MIT'
 ==
